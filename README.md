@@ -1,7 +1,6 @@
 # Discord Bot - Kiroku Bridge
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: Private](https://img.shields.io/badge/license-Private-red.svg)](LICENSE)
 
 Discord bot that acts as a gateway to the Kiroku API. Receives messages from specific channels and automatically routes them to the corresponding endpoints to process YouTube videos, purchase receipts, and Japanese study assets.
 
@@ -292,10 +291,6 @@ discord_bot/
 - Use `.env.example` as template without real secrets
 - Run `./scripts/scan-secrets.sh` before each commit
 - Don't commit `__pycache__/`, `.venv/`, or linter cache files
-
-## 📄 License
-
-Private. All rights reserved.
 
 ## 👨‍💻 Author
 
