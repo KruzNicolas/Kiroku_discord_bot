@@ -1,0 +1,1 @@
+"""Attachment normalization utilities."""
