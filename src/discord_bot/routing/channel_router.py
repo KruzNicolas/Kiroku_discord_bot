@@ -7,7 +7,7 @@ from discord_bot.domain.models import ChannelKind, NormalizedMessage, RouteDecis
 from discord_bot.routing.policies import POLICIES
 
 YOUTUBE_PATTERN = re.compile(
-    r"(https?://(?:www\.)?(?:youtube\.com/watch\?v=[\w-]+|youtu\.be/[\w-]+))",
+    r"(https?://(?:www\.)?(?:youtube\.com/(?:watch\?(?:.*&)?v=[\w-]+|shorts/[\w-]+)|youtu\.be/[\w-]+)(?:[^\s]*))",
     re.IGNORECASE,
 )
 PRIORITY_TOKEN_PATTERN = re.compile(r"^(?:priority|p)=(?P<value>[a-zA-Z]+)$")

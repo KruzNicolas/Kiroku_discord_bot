@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from urllib.parse import urlparse
 
 from dotenv import find_dotenv, load_dotenv
@@ -72,11 +72,11 @@ def _validate_api_base_url(value: str) -> None:
 
 @dataclass(frozen=True)
 class BotConfig:
-    discord_bot_token: str
+    discord_bot_token: str = field(repr=False)
     allowed_guild_ids: set[str]
     allowed_user_ids: set[str]
     api_base_url: str
-    internal_api_token: str
+    internal_api_token: str = field(repr=False)
     route_channel_id_videos: str
     route_channel_id_receipts_photos: str
     route_channel_id_receipts_manual: str
