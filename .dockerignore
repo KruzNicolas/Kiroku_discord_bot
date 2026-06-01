@@ -1,0 +1,45 @@
+# Git
+.git/
+.gitignore
+.github/
+
+# Python / uv
+.venv/
+.uv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# AI tools
+.atl/
+.opencode/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing / linting
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Docs (not needed in image)
+README.md
+PRD_DISCORD_BOT.md
+
+# Dev dependencies
+requirements-dev.txt

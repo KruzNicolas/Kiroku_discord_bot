@@ -58,3 +58,9 @@ secrets*.json
 # OS
 Thumbs.db
 .DS_Store
+
+# AI tools & package managers
+.atl/
+.uv/
+.opencode/
+uv.lock
